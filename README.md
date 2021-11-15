@@ -1,6 +1,4 @@
 # modulo-1-evaluacion-intermedia-NataliaaJN
-Ejercicio de evaluación intermedia
-
 <h1 align="center">Hola 👋, soy Natalia Jiménez</h1>
 <h3 align="center">Ejercicio de evaluación intermedia</h3>
 <h3 align="left">Languages and Tools:</h3>
