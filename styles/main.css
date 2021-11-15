@@ -17,6 +17,7 @@
 .header-container {
   width: 100%;
   position: fixed;
+  z-index: 999;
   top: 0;
   left: 0;
   padding: 10px;
@@ -72,4 +73,26 @@
 
 .contact {
   margin-left: 10px;
+}
+
+/* MAIN */
+.main {
+  background-color: var(--PrincipalColor);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.title-item {
+  color: var(--TitleFontColor);
+  font-family: var(--TitleFont);
+  font-size: 30px;
+  text-align: center;
 }
