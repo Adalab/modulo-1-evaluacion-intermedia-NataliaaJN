@@ -31,16 +31,16 @@
 /* Logo */
 .image-container {
   margin-bottom: 10px;
-  width: 155px;
-  height: 61px;
+  /* width: 155px;
+  height: 61px; */
 }
 
 .logo-adalab {
-  /* width: 155px;
-  height: 61px; */
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
+  width: 155px;
+  height: 61px;
+  /* width: 100%;
+  height: 100%; */
+  /* object-fit: contain; */
 }
 
 /* Menu */
@@ -95,4 +95,28 @@
   font-family: var(--TitleFont);
   font-size: 30px;
   text-align: center;
+}
+
+/* Responsive version */
+@media all and (min-width: 768px) {
+  .header-container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+  }
+
+  .image-container {
+    margin: 0;
+  }
+
+  .nav-menu {
+    padding-bottom: 0;
+    justify-content: flex-end;
+    margin: 0;
+  }
+
+  .title-item {
+    font-size: 40px;
+  }
 }
