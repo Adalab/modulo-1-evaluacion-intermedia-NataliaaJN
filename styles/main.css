@@ -42,3 +42,34 @@
   object-fit: contain;
 }
 
+/* Menu */
+.nav-menu {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 3px;
+}
+
+.menu-container {
+  list-style-type: none;
+  text-align: center;
+  display: flex;
+}
+
+.menu-item {
+  color: var(--MenuTextColor);
+  text-decoration: none;
+  font-family: var(--TitleFont);
+  font-size: 16px;
+}
+
+.menu-item {
+  font-weight: bold;
+}
+.blog {
+  margin-right: 10px;
+}
+
+.contact {
+  margin-left: 10px;
+}
