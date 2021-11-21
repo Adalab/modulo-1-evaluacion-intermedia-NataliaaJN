@@ -1,8 +1,119 @@
-@import 'core/variables';
-@import 'core/reset';
-@import 'components/code';
-@import 'components/links';
-@import 'layout/page';
-@import 'layout/header';
-@import 'layout/footer';
-@import 'pages/index';
+@import "core/variables";
+@import "core/reset";
+// @import 'layout/page';
+// @import 'layout/header';
+// @import 'pages/index';
+
+body {
+  font-family: $TitleFont;
+}
+
+/* HEADER */
+.header-container {
+  width: 100%;
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  padding: 10px 10px 5px 10px;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  @media all and (min-width: 768px) {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px 20px;
+    box-sizing: border-box;
+  }
+}
+
+/* Logo */
+.image-container {
+  margin-bottom: 10px;
+  @media all and (min-width: 768px) {
+    margin: 0;
+  }
+}
+.link-image {
+  padding: 60px 10px 0 10px;
+}
+.logo-adalab {
+  width: 155px;
+  height: 61px;
+}
+
+/* Menu */
+.nav-menu {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  @media all and (min-width: 768px) {
+    padding-bottom: 0;
+    justify-content: flex-end;
+    margin: 0;
+  }
+}
+
+.menu-container {
+  list-style-type: none;
+  text-align: center;
+  display: flex;
+}
+
+.menu-item {
+  color: $MenuTextColor;
+  text-decoration: none;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.menu-item {
+  font-weight: bold;
+}
+
+.blog {
+  padding: 10px 10px 3px 10px;
+  padding-right: 10px;
+  padding-bottom: 3px;
+  @media (min-width: 768px) {
+    padding-bottom: 10px;
+  }
+}
+.contact {
+  padding: 10px 10px 3px 10px;
+  padding-left: 10px;
+  padding-bottom: 3px;
+  @media (min-width: 768px) {
+    padding-bottom: 10px;
+  }
+}
+
+/* MAIN */
+.main {
+  background-color: $PrincipalColor;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: $TitleFontColor;
+  font-size: 30px;
+  @media all and (min-width: 768px) {
+    font-size: 40px;
+  }
+}
+
+.title-item {
+  text-align: center;
+}
+
+.title-item::first-letter {
+  text-transform: uppercase;
+}
